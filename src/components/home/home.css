@@ -1,0 +1,8 @@
+.abstract_home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
