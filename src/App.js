@@ -1,5 +1,5 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import {Navbar , Header , Home , Footer , Abstract} from './components/index';
+import {Navbar , Header , Home , Footer , Abstract , ManageAccount} from './components/index';
 
 const App = () => (
     <BrowserRouter>
@@ -8,6 +8,8 @@ const App = () => (
         <Routes>
             <Route path={'/'} exact element={<Home/>}/>
             <Route path={'/categories/abstract'} element={<Abstract/>}/>
+            <Route path={'/categories/Manage-account'} element={<ManageAccount/>}/>
+            <Route path={'/categories/Manage-projects'} element={<button/>}/>
         </Routes>
         <Footer/>
     </BrowserRouter>

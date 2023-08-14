@@ -1,6 +1,6 @@
 import './sectionCard.css';
 import {Link} from 'react-router-dom'
-const SectionCard = ({img,title,description,navigate}) => (
+const SectionCard = ({img,title,description,navigate}) =>(
     <div className={"abstract_home_section"}>
         <div className={"abstract_home_section_img"}>
             <img src={img} alt="card"/>

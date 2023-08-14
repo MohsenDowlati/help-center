@@ -5,7 +5,7 @@ const Home = () => (
     <div className={"abstract_home"}>
         {home_data.map((card,index)=>(
             <div>
-            <SectionCard img={card.img} title={card.title} description={card.description} key={index}/>
+            <SectionCard img={card.img} title={card.title} description={card.description} navigate={card.navigate} key={index}/>
             </div>
             ))}
     </div>
