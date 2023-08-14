@@ -4,8 +4,8 @@ import './abstract.css';
 const Abstract = () => (
     <div className={"abstract_abstract section_padding"}>
         <div className={"abstract_abstract_articles"}>
-            {abstract_articles.map((card)=>(
-                <AbstractArticles title={card.title} articles={card.articles} key={card.id}/>
+            {abstract_articles.map((card,index)=>(
+                <AbstractArticles title={card.title} articles={card.articles} key={card.id} key={index}/>
             ))}
         </div>
         <div className={"abstract_abstract_practices"}>

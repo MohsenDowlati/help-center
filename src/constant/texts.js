@@ -144,8 +144,23 @@ const manage_projects = [
         id:1,
         title: 'Manage your organization',
         articles: ['How to create a new organization (for existing users)','Organization overview','Joining an organization','Send an invitation','Understand seat and role types','Manage user permissions and access']
+    },
+    {
+        id: 2,
+        title: 'Manage your teams',
+        articles: ['Create and manage teams']
+    },
+    {
+        id: 3,
+        title: 'Manage your projects',
+        articles: ['Create a project','Project permissions','Organize your projects with sections','Archive or delete a project','Duplicate a project','Transfer a project']
     }
 ]
 
 const manage_account = ['Change your email settings','Change account settings','Delete your account','Troubleshooting login issues','Domains officially associated with Abstract']
-export {home_data , footer_menu , abstract_articles , abstract_practice , manage_account};
+
+const manage_billing = ['Change your subscription','Manage billing details','View your billing details and invoices']
+
+const authentication = ['Understand single sign-on','Configure single sign-on using ADFS','Configure single sign-on using Amazon Web Services','Configure single sign-on using Azure AD','Configure single sign-on using Google SAML','Configure single sign-on using Okta']
+
+export {home_data , footer_menu , abstract_articles , abstract_practice , manage_account , manage_projects , manage_billing , authentication};
