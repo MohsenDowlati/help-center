@@ -1,7 +1,28 @@
 ul {
     list-style-type: circle;
-    margin-left: 1rem;
+    margin-left: 3rem;
+    padding: 1rem 0;
 }
+
+ol {
+    margin-left: 3rem;
+}
+h1{
+    font-family: var(--font-base);
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: -.01em;
+    margin: 1rem 0;
+}
+
+p {
+    font-family: var(--font-base);
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -.03em;
+    line-height: 35px;
+}
+
 .label {
     display: flex;
     justify-content: center;
@@ -9,6 +30,7 @@ ul {
     width: 775px;
     background: rgb(255, 228, 150);
     padding: 1rem 1.25rem;
+    margin: 2rem 0;
 
     border: none;
     border-radius: 10px;
@@ -26,17 +48,68 @@ ul {
 
 .abstract_support {
     display: flex;
-    padding: 6rem 6rem;
+    padding: 4rem 5rem;
 }
 
 .abstract_support_signIn {
     font-family: var(--font-base);
     font-weight: 450;
     font-size: 20px;
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .abstract_support_signIn span:hover {
     cursor:pointer;
     text-decoration: underline;
+}
+
+.abstract_support_contact , .abstract_support_ask , .abstract_support_inquiry{
+    margin-bottom: 5rem;
+}
+
+
+.abstract_support_ask ul {
+    list-style-type: disc;
+}
+
+
+.abstract_support_contact span ,
+.abstract_support_ask span ,
+.abstract_support_inquiry span {
+    font-weight: bold;
+}
+
+.abstract_support_left {
+    width: 60%;
+}
+
+.abstract_support_right {
+    height: 1500px;
+    width: 30%;
+    margin-left: 5rem;
+}
+
+.abstract_support_float {
+    position: sticky;
+    top: 70px;
+    width: 100%;
+    text-align: left;
+}
+
+.abstract_support_float p {
+    margin: 0.8rem 0;
+    border-radius: 8px;
+    padding: 5px 3px;
+    line-height: normal;
+}
+
+
+.abstract_support_float p:hover{
+    text-decoration: underline;
+}
+
+.isActive {
+    background: var(--color-blue);
+    color: var(--color-white);
+    text-decoration: none;
 }
