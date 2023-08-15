@@ -1,13 +1,10 @@
 import {BiHelpCircle} from 'react-icons/bi'
 import './floatButton.css';
-import {useState} from "react";
 
 const FloatButton = () => {
 
-    const [clicked , setClicked] = useState(false);
     const handleClick = () => {
-      if (!clicked)
-          setClicked(true);
+      window.alert('Help!');
     }
 
     return(

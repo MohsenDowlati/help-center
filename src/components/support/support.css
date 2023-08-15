@@ -64,7 +64,7 @@ p {
 }
 
 .abstract_support_contact , .abstract_support_ask , .abstract_support_inquiry{
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
 }
 
 
@@ -84,7 +84,7 @@ p {
 }
 
 .abstract_support_right {
-    height: 1500px;
+    height: 1600px;
     width: 30%;
     margin-left: 5rem;
 }
@@ -108,8 +108,60 @@ p {
     text-decoration: underline;
 }
 
+.abstract_support_float p +.isActive{
+    text-decoration: none;
+}
+
 .isActive {
     background: var(--color-blue);
     color: var(--color-white);
-    text-decoration: none;
+}
+
+@media screen and (max-width:1400px){
+    .abstract_support_right {
+        display: none;
+    }
+
+    .abstract_support_left {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    .label {
+        width: 600px;
+    }
+
+    .label p{
+        font-size: 16px;
+        line-height: 31px;
+    }
+
+    .abstract_support {
+        padding: 4rem 3rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .label {
+        width: 500px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -.03em;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .label {
+        width:90%;
+    }
+
+    .abstract_support {
+        padding: 3rem 1rem;
+    }
 }

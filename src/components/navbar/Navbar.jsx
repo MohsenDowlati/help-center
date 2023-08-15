@@ -2,6 +2,7 @@ import {useState} from "react";
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {RxCross1}from 'react-icons/rx';
 import logo from '../../assets/logo.png';
+import {Link} from 'react-router-dom';
 import './navbar.css';
 
 const Navbar = () => {
@@ -17,7 +18,7 @@ const Navbar = () => {
                     <p>Abstract</p>
                 </div>
                 <div className={"abstract_navbar_left_split"}/>
-                <p className={"abstract_navbar_left_site"}>Help Center</p>
+                <Link to={'/'}><p className={"abstract_navbar_left_site"}>Help Center</p></Link>
             </div>
             <div className={"abstract_navbar_right"}>
                 <button type={"button"} className={'abstract_navbar_right_request'}>Submit a request</button>
